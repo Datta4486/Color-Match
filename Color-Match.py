@@ -8,7 +8,7 @@ Repeat = 1
 ColorList = ["🟦","🟥","🟩","🟨","🟧","🟫","⬛","🟪","⬜"]
 
 #For the user choosing which color to choose based on names
-ColorDict = {"blue":"🟦","red":"🟥","green":"🟩","yellow":"🟨","orange":"🟧","brown":"🟫","black":"⬛","purple":"🟪","white":"⬜"}
+ColorDict = {"Blue":"🟦","Red":"🟥","Green":"🟩","Yellow":"🟨","Orange":"🟧","Brown":"🟫","Black":"⬛","Purple":"🟪","White":"⬜"}
 
 
 
@@ -111,7 +111,7 @@ if PlayGame == "yes":
 
                 #Switching colors logic
                 while True:
-                    InitialC = str(input(""))
+                    InitialC = str(input("").lower())
                     if InitialC in ColorNameList:
                         break
                     else:
@@ -144,7 +144,7 @@ if PlayGame == "yes":
         print("Congratulations! You win the game. \nWould you like to play again?")
 
         while True:
-            ReplayAnswer = str(input(""))
+            ReplayAnswer = str(input("").lower())
             if ReplayAnswer in ["yes","y","n","no"]:
                 Repeat == 0
                 break
