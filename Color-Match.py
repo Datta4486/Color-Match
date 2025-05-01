@@ -137,7 +137,6 @@ if PlayGame in ['y','yes']:
                 print("\n")
                 print(UserList)
                 print(ColorNameList)
-                print(CPUList)
 
                 CorrectPlaceNo = 0 #No of correctly matched colors reset
                             
